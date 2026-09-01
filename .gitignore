@@ -1,0 +1,7 @@
+node_modules/
+.vite/
+.playwright-mcp/
+dist/
+.env
+.env.local
+*:Zone.Identifier
