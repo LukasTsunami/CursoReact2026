@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+  background: #fff;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: #1a1023;
+}
+
+.cabecalho__logo {
+  color: #fbbf24;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.cabecalho__menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.rodape {
+  padding: 24px 32px;
+  background: #1a1023;
+  color: #cbd5e1;
+  text-align: center;
+}
+
+.hero {
+  padding: 96px 32px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0 0 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.bento-espetaculos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 32px;
+}
+
+.bento-espetaculos img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.prova-social,
+.selos-confianca {
+  padding: 32px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.prova-social blockquote {
+  font-style: italic;
+  margin: 0 0 16px;
+  padding-left: 16px;
+  border-left: 4px solid #7f1d1d;
+}
+
+.selos-confianca ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.selos-confianca li {
+  padding: 8px 16px;
+  background: #f3f4f6;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.grade-teatros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 0 32px 32px;
+}
+
+.cartao-teatro {
+  display: block;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cartao-teatro__nota {
+  font-weight: 700;
+  color: #b45309;
+}
+
+.pagina-teatro {
+  padding: 32px;
+}
+
+.teatro {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.teatro__imagem {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* posição, tamanho e inclinação vêm dos dados (Assento.tsx); o botão cobre
+   exatamente a poltrona desenhada na foto, então os estados são camadas
+   translúcidas que deixam o rótulo impresso legível. */
+.assento {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.assento--disponivel:hover,
+.assento--disponivel:focus-visible {
+  border-color: #15803d;
+  background: rgba(34, 197, 94, 0.25);
+  outline: none;
+}
+
+.assento--ocupado,
+.assento--bloqueado,
+.assento--quebrado,
+.assento--reservadoEspecial {
+  background: rgba(75, 85, 99, 0.6);
+  cursor: not-allowed;
+}
+
+.assento--selecionada,
+.assento--selecionada:hover {
+  background: rgba(37, 99, 235, 0.55);
+  border: 2px solid #fbbf24;
+  z-index: 1;
+}
+
+
+.teatro__contador {
+  padding: 0 32px;
+  font-weight: 600;
+}
+
+.detalhes-poltrona {
+  padding: 0 32px 32px;
+  font-size: 18px;
+}
+
+.assento:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.assento--acesso-livre {
+  border-color: #16a34a;
+}
+
+.assento--acesso-pagante {
+  border-color: #2563eb;
+}
+
+.assento--acesso-exclusivoBradesco {
+  border-color: #dc2626;
+}
+
+.assento--acessivel {
+  outline: 2px dotted #7c3aed;
+  outline-offset: 1px;
+}
+
+.teatro__total {
+  padding: 0 32px;
+  font-weight: 600;
+}
+
+.legenda {
+  padding: 16px 32px 0;
+}
+
+.legenda ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.legenda__item {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.legenda__item--livre {
+  background: #16a34a;
+}
+
+.legenda__item--pagante {
+  background: #2563eb;
+}
+
+.legenda__item--exclusivoBradesco {
+  background: #dc2626;
+}

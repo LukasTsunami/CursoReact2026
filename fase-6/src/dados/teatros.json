@@ -1,0 +1,42 @@
+[
+  {
+    "teatroId": "teatro-municipal-de-sao-paulo",
+    "nome": "Teatro Municipal de São Paulo",
+    "descricao": "Um dos teatros mais tradicionais do Brasil, palco de ópera, balé e concertos desde 1911.",
+    "nota": 4.7,
+    "formato": "classico",
+    "cadeirasEstofadas": true,
+    "imagemUrl": "/assets/teatro-municipal-de-sao-paulo.png",
+    "setores": []
+  },
+  {
+    "teatroId": "teatro-amazonas",
+    "nome": "Teatro Amazonas",
+    "descricao": "Ícone da Belle Époque no coração da floresta, sede do Festival Amazonas de Ópera.",
+    "nota": 4.6,
+    "formato": "redondo",
+    "cadeirasEstofadas": true,
+    "imagemUrl": "/assets/teatro-amazonas.png",
+    "setores": []
+  },
+  {
+    "teatroId": "teatro-municipal-do-rio-de-janeiro",
+    "nome": "Teatro Municipal do Rio de Janeiro",
+    "descricao": "Inspirado na Ópera de Paris, recebe temporadas de ópera, ballet e orquestra sinfônica.",
+    "nota": 4.5,
+    "formato": "funil",
+    "cadeirasEstofadas": true,
+    "imagemUrl": "/assets/teatro-municipal-do-rio-de-janeiro.png",
+    "setores": []
+  },
+  {
+    "teatroId": "teatro-castro-alves",
+    "nome": "Teatro Castro Alves",
+    "descricao": "Maior teatro da Bahia, palco de espetáculos musicais e apresentações de dança.",
+    "nota": 4.4,
+    "formato": "multiAndar",
+    "cadeirasEstofadas": false,
+    "imagemUrl": "/assets/teatro-castro-alves.png",
+    "setores": []
+  }
+]

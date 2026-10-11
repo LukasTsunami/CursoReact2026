@@ -1,0 +1,32 @@
+{
+  "teatroId": "teatro-amazonas",
+  "nome": "Teatro Amazonas",
+  "descricao": "Ícone da Belle Époque no coração da floresta, sede do Festival Amazonas de Ópera.",
+  "nota": 4.6,
+  "formato": "redondo",
+  "cadeirasEstofadas": true,
+  "imagemUrl": "/assets/teatro-amazonas.png",
+  "setores": [
+    {
+      "id": "plateia-unica",
+      "nome": "Plateia Única",
+      "embargado": false,
+      "tipoAcesso": "livre",
+      "fileiras": [
+        {
+          "id": "plateia-unica-fila-a",
+          "nome": "A",
+          "reservada": false,
+          "emManutencao": false,
+          "assentos": [
+            { "numero": 1, "preco": 80, "acessibilidade": true, "status": "disponivel", "coordinateX": 30, "coordinateY": 50, "largura": 3, "altura": 2, "rotacao": 0 },
+            { "numero": 2, "preco": 80, "acessibilidade": false, "status": "disponivel", "coordinateX": 40, "coordinateY": 50, "largura": 3, "altura": 2, "rotacao": 0 },
+            { "numero": 3, "preco": 80, "acessibilidade": false, "status": "disponivel", "coordinateX": 50, "coordinateY": 50, "largura": 3, "altura": 2, "rotacao": 0 },
+            { "numero": 4, "preco": 80, "acessibilidade": false, "status": "ocupado", "coordinateX": 60, "coordinateY": 50, "largura": 3, "altura": 2, "rotacao": 0 },
+            { "numero": 5, "preco": 80, "acessibilidade": false, "status": "disponivel", "coordinateX": 70, "coordinateY": 50, "largura": 3, "altura": 2, "rotacao": 0 }
+          ]
+        }
+      ]
+    }
+  ]
+}
