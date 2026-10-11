@@ -97,6 +97,6 @@ describe("fase-9: concluir a compra (checkout)", () => {
       await screen.findByRole("heading", { name: /pedido confirmado/i }),
     ).toBeInTheDocument();
     expect(screen.getByText(/meus ingressos/i)).toBeInTheDocument();
-    expect(screen.getByText(/plateia esquerdo · a2/i)).toBeInTheDocument();
+    expect(screen.getByText(/plateia esquerdo · a101/i)).toBeInTheDocument();
   });
 });
