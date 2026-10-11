@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#4c1d95"/>
+  <g fill="#fbbf24">
+    <ellipse cx="150" cy="150" rx="70" ry="90"/>
+    <ellipse cx="250" cy="150" rx="70" ry="90"/>
+  </g>
+  <g fill="none" stroke="#4c1d95" stroke-width="6" stroke-linecap="round">
+    <path d="M110 180 Q150 210 190 180"/>
+    <path d="M210 190 Q250 165 290 190"/>
+  </g>
+  <g fill="#4c1d95">
+    <circle cx="130" cy="130" r="8"/>
+    <circle cx="170" cy="130" r="8"/>
+    <circle cx="230" cy="130" r="8"/>
+    <circle cx="270" cy="130" r="8"/>
+  </g>
+  <text x="200" y="270" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#fef3c7">Ópera</text>
+</svg>
